@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75D2C01818D7F3D50052F349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01718D7F3D50052F349 /* Foundation.framework */; };
+		75D2C02618D7F3D50052F349 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C02518D7F3D50052F349 /* XCTest.framework */; };
+		75D2C02718D7F3D50052F349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01718D7F3D50052F349 /* Foundation.framework */; };
+		75D2C02918D7F3D50052F349 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C02818D7F3D50052F349 /* UIKit.framework */; };
+		75D2C02C18D7F3D50052F349 /* libDELiteStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01418D7F3D50052F349 /* libDELiteStore.a */; };
+		75D2C03218D7F3D50052F349 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C03018D7F3D50052F349 /* InfoPlist.strings */; };
+		75D2C03418D7F3D50052F349 /* DELiteStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C03318D7F3D50052F349 /* DELiteStoreTests.m */; };
+		75D2C03F18D7F3E40052F349 /* DELiteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C03E18D7F3E40052F349 /* DELiteStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75D2C02A18D7F3D50052F349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D2C00C18D7F3D50052F349 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75D2C01318D7F3D50052F349;
+			remoteInfo = DELiteStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75D2C01218D7F3D50052F349 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		75D2C01418D7F3D50052F349 /* libDELiteStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDELiteStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D2C01718D7F3D50052F349 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75D2C01B18D7F3D50052F349 /* DELiteStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DELiteStore-Prefix.pch"; sourceTree = "<group>"; };
+		75D2C02418D7F3D50052F349 /* DELiteStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DELiteStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D2C02518D7F3D50052F349 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75D2C02818D7F3D50052F349 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		75D2C02F18D7F3D50052F349 /* DELiteStoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DELiteStoreTests-Info.plist"; sourceTree = "<group>"; };
+		75D2C03118D7F3D50052F349 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75D2C03318D7F3D50052F349 /* DELiteStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DELiteStoreTests.m; sourceTree = "<group>"; };
+		75D2C03D18D7F3E40052F349 /* DELiteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DELiteStore.h; sourceTree = "<group>"; };
+		75D2C03E18D7F3E40052F349 /* DELiteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DELiteStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75D2C01118D7F3D50052F349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D2C01818D7F3D50052F349 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75D2C02118D7F3D50052F349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D2C02618D7F3D50052F349 /* XCTest.framework in Frameworks */,
+				75D2C02918D7F3D50052F349 /* UIKit.framework in Frameworks */,
+				75D2C02C18D7F3D50052F349 /* libDELiteStore.a in Frameworks */,
+				75D2C02718D7F3D50052F349 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75D2C00B18D7F3D50052F349 = {
+			isa = PBXGroup;
+			children = (
+				75D2C01918D7F3D50052F349 /* DELiteStore */,
+				75D2C02D18D7F3D50052F349 /* DELiteStoreTests */,
+				75D2C01618D7F3D50052F349 /* Frameworks */,
+				75D2C01518D7F3D50052F349 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75D2C01518D7F3D50052F349 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D2C01418D7F3D50052F349 /* libDELiteStore.a */,
+				75D2C02418D7F3D50052F349 /* DELiteStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D2C01618D7F3D50052F349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D2C01718D7F3D50052F349 /* Foundation.framework */,
+				75D2C02518D7F3D50052F349 /* XCTest.framework */,
+				75D2C02818D7F3D50052F349 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75D2C01918D7F3D50052F349 /* DELiteStore */ = {
+			isa = PBXGroup;
+			children = (
+				75D2C03D18D7F3E40052F349 /* DELiteStore.h */,
+				75D2C03E18D7F3E40052F349 /* DELiteStore.m */,
+				75D2C01A18D7F3D50052F349 /* Supporting Files */,
+			);
+			path = DELiteStore;
+			sourceTree = "<group>";
+		};
+		75D2C01A18D7F3D50052F349 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D2C01B18D7F3D50052F349 /* DELiteStore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75D2C02D18D7F3D50052F349 /* DELiteStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				75D2C03318D7F3D50052F349 /* DELiteStoreTests.m */,
+				75D2C02E18D7F3D50052F349 /* Supporting Files */,
+			);
+			path = DELiteStoreTests;
+			sourceTree = "<group>";
+		};
+		75D2C02E18D7F3D50052F349 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D2C02F18D7F3D50052F349 /* DELiteStoreTests-Info.plist */,
+				75D2C03018D7F3D50052F349 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75D2C01318D7F3D50052F349 /* DELiteStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D2C03718D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStore" */;
+			buildPhases = (
+				75D2C01018D7F3D50052F349 /* Sources */,
+				75D2C01118D7F3D50052F349 /* Frameworks */,
+				75D2C01218D7F3D50052F349 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DELiteStore;
+			productName = DELiteStore;
+			productReference = 75D2C01418D7F3D50052F349 /* libDELiteStore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		75D2C02318D7F3D50052F349 /* DELiteStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D2C03A18D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStoreTests" */;
+			buildPhases = (
+				75D2C02018D7F3D50052F349 /* Sources */,
+				75D2C02118D7F3D50052F349 /* Frameworks */,
+				75D2C02218D7F3D50052F349 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75D2C02B18D7F3D50052F349 /* PBXTargetDependency */,
+			);
+			name = DELiteStoreTests;
+			productName = DELiteStoreTests;
+			productReference = 75D2C02418D7F3D50052F349 /* DELiteStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75D2C00C18D7F3D50052F349 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Double Encore";
+			};
+			buildConfigurationList = 75D2C00F18D7F3D50052F349 /* Build configuration list for PBXProject "DELiteStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75D2C00B18D7F3D50052F349;
+			productRefGroup = 75D2C01518D7F3D50052F349 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75D2C01318D7F3D50052F349 /* DELiteStore */,
+				75D2C02318D7F3D50052F349 /* DELiteStoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75D2C02218D7F3D50052F349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D2C03218D7F3D50052F349 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75D2C01018D7F3D50052F349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D2C03F18D7F3E40052F349 /* DELiteStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75D2C02018D7F3D50052F349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D2C03418D7F3D50052F349 /* DELiteStoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75D2C02B18D7F3D50052F349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75D2C01318D7F3D50052F349 /* DELiteStore */;
+			targetProxy = 75D2C02A18D7F3D50052F349 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75D2C03018D7F3D50052F349 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75D2C03118D7F3D50052F349 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75D2C03518D7F3D50052F349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75D2C03618D7F3D50052F349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75D2C03818D7F3D50052F349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DELiteStore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		75D2C03918D7F3D50052F349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DELiteStore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		75D2C03B18D7F3D50052F349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DELiteStoreTests/DELiteStoreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75D2C03C18D7F3D50052F349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				INFOPLIST_FILE = "DELiteStoreTests/DELiteStoreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75D2C00F18D7F3D50052F349 /* Build configuration list for PBXProject "DELiteStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D2C03518D7F3D50052F349 /* Debug */,
+				75D2C03618D7F3D50052F349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D2C03718D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D2C03818D7F3D50052F349 /* Debug */,
+				75D2C03918D7F3D50052F349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D2C03A18D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D2C03B18D7F3D50052F349 /* Debug */,
+				75D2C03C18D7F3D50052F349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75D2C00C18D7F3D50052F349 /* Project object */;
+}
