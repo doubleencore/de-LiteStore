@@ -15,6 +15,7 @@ static NSMapTable *_liteStores = nil;
 
 @interface DELiteStore ()
 
+@property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSString *storePath;
 @property (nonatomic, strong, readonly) NSMutableDictionary *store;
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
@@ -54,6 +55,8 @@ static NSMapTable *_liteStores = nil;
 - (instancetype)initWithName:(NSString *)name
 {
     if (self = [super init]) {
+        _name = name;
+        
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
         _storePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.litestore", name]];
         
