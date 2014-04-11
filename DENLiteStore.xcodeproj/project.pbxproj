@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75C8C19E18F86EE2008CC923 /* DENLiteStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D2C03D18D7F3E40052F349 /* DENLiteStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D2C01818D7F3D50052F349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01718D7F3D50052F349 /* Foundation.framework */; };
 		75D2C02618D7F3D50052F349 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C02518D7F3D50052F349 /* XCTest.framework */; };
 		75D2C02718D7F3D50052F349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01718D7F3D50052F349 /* Foundation.framework */; };
@@ -143,6 +144,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		75C8C19D18F86EDA008CC923 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C8C19E18F86EE2008CC923 /* DENLiteStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		75D2C01318D7F3D50052F349 /* DENLiteStore */ = {
 			isa = PBXNativeTarget;
@@ -151,6 +163,7 @@
 				75D2C01018D7F3D50052F349 /* Sources */,
 				75D2C01118D7F3D50052F349 /* Frameworks */,
 				75D2C01218D7F3D50052F349 /* CopyFiles */,
+				75C8C19D18F86EDA008CC923 /* Headers */,
 			);
 			buildRules = (
 			);
