@@ -11,7 +11,7 @@
 NSString *const DELiteStoreDidChangeNotification = @"DELiteStoreDidChangeNotification";
 
 static dispatch_queue_t _classQueue = nil;
-static NSMutableDictionary *_liteStores = nil;
+static NSMapTable *_liteStores = nil;
 
 @interface DELiteStore ()
 
@@ -29,7 +29,7 @@ static NSMutableDictionary *_liteStores = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _classQueue = dispatch_queue_create("com.doubleencore.litestore.class", NULL);
-        _liteStores = [NSMutableDictionary new];
+        _liteStores = [NSMapTable strongToWeakObjectsMapTable];
     });
 }
 
@@ -39,11 +39,11 @@ static NSMutableDictionary *_liteStores = nil;
     __block id store = nil;
     
     dispatch_sync(_classQueue, ^{
-        store = _liteStores[name];
+        store = [_liteStores objectForKey:name];
         
         if (!store) {
             store = [[self alloc] initWithName:name];
-            _liteStores[name] = store;
+            [_liteStores setObject:store forKey:name];
         }
     });
     
@@ -127,7 +127,7 @@ static NSMutableDictionary *_liteStores = nil;
 - (void)removeObjectForKey:(NSString *)key
 {
     dispatch_sync(_queue, ^{
-        _store[key] = nil;
+        [_store removeObjectForKey:key];
     });
     
     [self synchronize];
