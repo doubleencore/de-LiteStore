@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Double Encore. All rights reserved.
 //
 
-#import "DELiteStore.h"
+#import "DENLiteStore.h"
 
 NSString *const DELiteStoreDidChangeNotification = @"DELiteStoreDidChangeNotification";
 
 static dispatch_queue_t _classQueue = nil;
 static NSMapTable *_liteStores = nil;
 
-@interface DELiteStore ()
+@interface DENLiteStore ()
 
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSString *storePath;
@@ -23,7 +23,7 @@ static NSMapTable *_liteStores = nil;
 @end
 
 
-@implementation DELiteStore
+@implementation DENLiteStore
 
 + (void)initialize
 {

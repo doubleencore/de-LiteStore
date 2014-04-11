@@ -7,16 +7,16 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "DELiteStore.h"
+#import "DENLiteStore.h"
 
-@interface DELiteStoreTests : XCTestCase
+@interface DENLiteStoreTests : XCTestCase
 
-@property (nonatomic, strong) DELiteStore *store;
+@property (nonatomic, strong) DENLiteStore *store;
 @property (nonatomic) BOOL receivedNotification;
 
 @end
 
-@implementation DELiteStoreTests
+@implementation DENLiteStoreTests
 
 - (void)setUp
 {
@@ -31,7 +31,7 @@
     }
     
     NSInteger i = arc4random();
-    self.store = [DELiteStore storeWithName:[NSString stringWithFormat:@"store-%d", i]];
+    self.store = [DENLiteStore storeWithName:[NSString stringWithFormat:@"store-%d", i]];
 }
 
 
@@ -50,7 +50,7 @@
 
 - (void)testInitializeMultipleStores
 {
-    DELiteStore *store2 = [DELiteStore storeWithName:@"store2"];
+    DENLiteStore *store2 = [DENLiteStore storeWithName:@"store2"];
 
     XCTAssertNotEqualObjects(self.store, store2, @"Two stores with different names should never be the same");
 }
@@ -59,7 +59,7 @@
 - (void)testInitializeIdenticalStores
 {
     NSString *name = [self.store name];
-    DELiteStore *secondStore = [DELiteStore storeWithName:name];
+    DENLiteStore *secondStore = [DENLiteStore storeWithName:name];
     
     XCTAssertEqual(self.store, secondStore, @"Two stores with the same name should be the same object");
 }
@@ -115,7 +115,7 @@
 
 - (void)testSetObjectWithMultipleStores
 {
-    DELiteStore *store2 = [DELiteStore storeWithName:@"store2"];
+    DENLiteStore *store2 = [DENLiteStore storeWithName:@"store2"];
     NSString *object = @"Hello World";
     NSString *key = @"test";
     
@@ -278,8 +278,8 @@
 
 - (void)testNotification
 {
-    DELiteStore *storeToListenTo = [DELiteStore storeWithName:@"Listen"];
-    DELiteStore *storeToIgnore = [DELiteStore storeWithName:@"Ignore"];
+    DENLiteStore *storeToListenTo = [DENLiteStore storeWithName:@"Listen"];
+    DENLiteStore *storeToIgnore = [DENLiteStore storeWithName:@"Ignore"];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationReceived:) name:DELiteStoreDidChangeNotification object:storeToListenTo];
     
@@ -292,7 +292,7 @@
 
 - (void)notificationReceived:(NSNotification *)notification
 {
-    DELiteStore *store = notification.object;
+    DENLiteStore *store = notification.object;
     
     NSString *wrongString = [store stringForKey:@"Wrong"];
     NSString *rightString = [store stringForKey:@"Right"];

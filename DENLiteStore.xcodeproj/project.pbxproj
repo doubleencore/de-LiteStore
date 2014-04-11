@@ -11,10 +11,10 @@
 		75D2C02618D7F3D50052F349 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C02518D7F3D50052F349 /* XCTest.framework */; };
 		75D2C02718D7F3D50052F349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01718D7F3D50052F349 /* Foundation.framework */; };
 		75D2C02918D7F3D50052F349 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C02818D7F3D50052F349 /* UIKit.framework */; };
-		75D2C02C18D7F3D50052F349 /* libDELiteStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01418D7F3D50052F349 /* libDELiteStore.a */; };
+		75D2C02C18D7F3D50052F349 /* libDENLiteStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C01418D7F3D50052F349 /* libDENLiteStore.a */; };
 		75D2C03218D7F3D50052F349 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75D2C03018D7F3D50052F349 /* InfoPlist.strings */; };
-		75D2C03418D7F3D50052F349 /* DELiteStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C03318D7F3D50052F349 /* DELiteStoreTests.m */; };
-		75D2C03F18D7F3E40052F349 /* DELiteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C03E18D7F3E40052F349 /* DELiteStore.m */; };
+		75D2C03418D7F3D50052F349 /* DENLiteStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C03318D7F3D50052F349 /* DENLiteStoreTests.m */; };
+		75D2C03F18D7F3E40052F349 /* DENLiteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C03E18D7F3E40052F349 /* DENLiteStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +40,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		75D2C01418D7F3D50052F349 /* libDELiteStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDELiteStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D2C01418D7F3D50052F349 /* libDENLiteStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDENLiteStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D2C01718D7F3D50052F349 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		75D2C01B18D7F3D50052F349 /* DELiteStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DELiteStore-Prefix.pch"; sourceTree = "<group>"; };
-		75D2C02418D7F3D50052F349 /* DELiteStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DELiteStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D2C01B18D7F3D50052F349 /* DENLiteStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DENLiteStore-Prefix.pch"; sourceTree = "<group>"; };
+		75D2C02418D7F3D50052F349 /* DENLiteStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DENLiteStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D2C02518D7F3D50052F349 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		75D2C02818D7F3D50052F349 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		75D2C02F18D7F3D50052F349 /* DELiteStoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DELiteStoreTests-Info.plist"; sourceTree = "<group>"; };
+		75D2C02F18D7F3D50052F349 /* DENLiteStoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DENLiteStoreTests-Info.plist"; sourceTree = "<group>"; };
 		75D2C03118D7F3D50052F349 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		75D2C03318D7F3D50052F349 /* DELiteStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DELiteStoreTests.m; sourceTree = "<group>"; };
-		75D2C03D18D7F3E40052F349 /* DELiteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DELiteStore.h; sourceTree = "<group>"; };
-		75D2C03E18D7F3E40052F349 /* DELiteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DELiteStore.m; sourceTree = "<group>"; };
+		75D2C03318D7F3D50052F349 /* DENLiteStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DENLiteStoreTests.m; sourceTree = "<group>"; };
+		75D2C03D18D7F3E40052F349 /* DENLiteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DENLiteStore.h; sourceTree = "<group>"; };
+		75D2C03E18D7F3E40052F349 /* DENLiteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DENLiteStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			files = (
 				75D2C02618D7F3D50052F349 /* XCTest.framework in Frameworks */,
 				75D2C02918D7F3D50052F349 /* UIKit.framework in Frameworks */,
-				75D2C02C18D7F3D50052F349 /* libDELiteStore.a in Frameworks */,
+				75D2C02C18D7F3D50052F349 /* libDENLiteStore.a in Frameworks */,
 				75D2C02718D7F3D50052F349 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,8 +79,8 @@
 		75D2C00B18D7F3D50052F349 = {
 			isa = PBXGroup;
 			children = (
-				75D2C01918D7F3D50052F349 /* DELiteStore */,
-				75D2C02D18D7F3D50052F349 /* DELiteStoreTests */,
+				75D2C01918D7F3D50052F349 /* DENLiteStore */,
+				75D2C02D18D7F3D50052F349 /* DENLiteStoreTests */,
 				75D2C01618D7F3D50052F349 /* Frameworks */,
 				75D2C01518D7F3D50052F349 /* Products */,
 			);
@@ -89,8 +89,8 @@
 		75D2C01518D7F3D50052F349 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C01418D7F3D50052F349 /* libDELiteStore.a */,
-				75D2C02418D7F3D50052F349 /* DELiteStoreTests.xctest */,
+				75D2C01418D7F3D50052F349 /* libDENLiteStore.a */,
+				75D2C02418D7F3D50052F349 /* DENLiteStoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,37 +105,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		75D2C01918D7F3D50052F349 /* DELiteStore */ = {
+		75D2C01918D7F3D50052F349 /* DENLiteStore */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C03D18D7F3E40052F349 /* DELiteStore.h */,
-				75D2C03E18D7F3E40052F349 /* DELiteStore.m */,
+				75D2C03D18D7F3E40052F349 /* DENLiteStore.h */,
+				75D2C03E18D7F3E40052F349 /* DENLiteStore.m */,
 				75D2C01A18D7F3D50052F349 /* Supporting Files */,
 			);
-			path = DELiteStore;
+			path = DENLiteStore;
 			sourceTree = "<group>";
 		};
 		75D2C01A18D7F3D50052F349 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C01B18D7F3D50052F349 /* DELiteStore-Prefix.pch */,
+				75D2C01B18D7F3D50052F349 /* DENLiteStore-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		75D2C02D18D7F3D50052F349 /* DELiteStoreTests */ = {
+		75D2C02D18D7F3D50052F349 /* DENLiteStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C03318D7F3D50052F349 /* DELiteStoreTests.m */,
+				75D2C03318D7F3D50052F349 /* DENLiteStoreTests.m */,
 				75D2C02E18D7F3D50052F349 /* Supporting Files */,
 			);
-			path = DELiteStoreTests;
+			path = DENLiteStoreTests;
 			sourceTree = "<group>";
 		};
 		75D2C02E18D7F3D50052F349 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C02F18D7F3D50052F349 /* DELiteStoreTests-Info.plist */,
+				75D2C02F18D7F3D50052F349 /* DENLiteStoreTests-Info.plist */,
 				75D2C03018D7F3D50052F349 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75D2C01318D7F3D50052F349 /* DELiteStore */ = {
+		75D2C01318D7F3D50052F349 /* DENLiteStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75D2C03718D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStore" */;
+			buildConfigurationList = 75D2C03718D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DENLiteStore" */;
 			buildPhases = (
 				75D2C01018D7F3D50052F349 /* Sources */,
 				75D2C01118D7F3D50052F349 /* Frameworks */,
@@ -156,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = DELiteStore;
+			name = DENLiteStore;
 			productName = DELiteStore;
-			productReference = 75D2C01418D7F3D50052F349 /* libDELiteStore.a */;
+			productReference = 75D2C01418D7F3D50052F349 /* libDENLiteStore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		75D2C02318D7F3D50052F349 /* DELiteStoreTests */ = {
+		75D2C02318D7F3D50052F349 /* DENLiteStoreTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75D2C03A18D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStoreTests" */;
+			buildConfigurationList = 75D2C03A18D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DENLiteStoreTests" */;
 			buildPhases = (
 				75D2C02018D7F3D50052F349 /* Sources */,
 				75D2C02118D7F3D50052F349 /* Frameworks */,
@@ -174,9 +174,9 @@
 			dependencies = (
 				75D2C02B18D7F3D50052F349 /* PBXTargetDependency */,
 			);
-			name = DELiteStoreTests;
+			name = DENLiteStoreTests;
 			productName = DELiteStoreTests;
-			productReference = 75D2C02418D7F3D50052F349 /* DELiteStoreTests.xctest */;
+			productReference = 75D2C02418D7F3D50052F349 /* DENLiteStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -185,10 +185,11 @@
 		75D2C00C18D7F3D50052F349 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DEN;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Double Encore";
 			};
-			buildConfigurationList = 75D2C00F18D7F3D50052F349 /* Build configuration list for PBXProject "DELiteStore" */;
+			buildConfigurationList = 75D2C00F18D7F3D50052F349 /* Build configuration list for PBXProject "DENLiteStore" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -200,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75D2C01318D7F3D50052F349 /* DELiteStore */,
-				75D2C02318D7F3D50052F349 /* DELiteStoreTests */,
+				75D2C01318D7F3D50052F349 /* DENLiteStore */,
+				75D2C02318D7F3D50052F349 /* DENLiteStoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D2C03F18D7F3E40052F349 /* DELiteStore.m in Sources */,
+				75D2C03F18D7F3E40052F349 /* DENLiteStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D2C03418D7F3D50052F349 /* DELiteStoreTests.m in Sources */,
+				75D2C03418D7F3D50052F349 /* DENLiteStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		75D2C02B18D7F3D50052F349 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 75D2C01318D7F3D50052F349 /* DELiteStore */;
+			target = 75D2C01318D7F3D50052F349 /* DENLiteStore */;
 			targetProxy = 75D2C02A18D7F3D50052F349 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -327,9 +328,9 @@
 		75D2C03818D7F3D50052F349 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/DELiteStore.dst;
+				DSTROOT = /tmp/DENLiteStore.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "DENLiteStore/DENLiteStore-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -339,9 +340,9 @@
 		75D2C03918D7F3D50052F349 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/DELiteStore.dst;
+				DSTROOT = /tmp/DENLiteStore.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "DENLiteStore/DENLiteStore-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -357,12 +358,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "DENLiteStore/DENLiteStore-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DELiteStoreTests/DELiteStoreTests-Info.plist";
+				INFOPLIST_FILE = "DENLiteStoreTests/DENLiteStoreTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -377,8 +378,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DELiteStore/DELiteStore-Prefix.pch";
-				INFOPLIST_FILE = "DELiteStoreTests/DELiteStoreTests-Info.plist";
+				GCC_PREFIX_HEADER = "DENLiteStore/DENLiteStore-Prefix.pch";
+				INFOPLIST_FILE = "DENLiteStoreTests/DENLiteStoreTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -387,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75D2C00F18D7F3D50052F349 /* Build configuration list for PBXProject "DELiteStore" */ = {
+		75D2C00F18D7F3D50052F349 /* Build configuration list for PBXProject "DENLiteStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D2C03518D7F3D50052F349 /* Debug */,
@@ -396,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75D2C03718D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStore" */ = {
+		75D2C03718D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DENLiteStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D2C03818D7F3D50052F349 /* Debug */,
@@ -405,7 +406,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75D2C03A18D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DELiteStoreTests" */ = {
+		75D2C03A18D7F3D50052F349 /* Build configuration list for PBXNativeTarget "DENLiteStoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D2C03B18D7F3D50052F349 /* Debug */,
