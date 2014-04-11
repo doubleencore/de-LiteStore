@@ -10,21 +10,44 @@
 
 NSString *const DELiteStoreDidChangeNotification = @"DELiteStoreDidChangeNotification";
 
-static dispatch_queue_t _queue = nil;
+static dispatch_queue_t _classQueue = nil;
+static NSMutableDictionary *_liteStores = nil;
 
 @interface DELiteStore ()
 
 @property (nonatomic, strong, readonly) NSString *storePath;
 @property (nonatomic, strong, readonly) NSMutableDictionary *store;
+@property (nonatomic, strong, readonly) dispatch_queue_t queue;
 
 @end
 
 
 @implementation DELiteStore
 
++ (void)initialize
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _classQueue = dispatch_queue_create("com.doubleencore.litestore.class", NULL);
+        _liteStores = [NSMutableDictionary new];
+    });
+}
+
+
 + (instancetype)storeWithName:(NSString *)name
 {
-    return [[self alloc] initWithName:name];
+    __block id store = nil;
+    
+    dispatch_sync(_classQueue, ^{
+        store = _liteStores[name];
+        
+        if (!store) {
+            store = [[self alloc] initWithName:name];
+            _liteStores[name] = store;
+        }
+    });
+    
+    return store;
 }
 
 
@@ -32,7 +55,7 @@ static dispatch_queue_t _queue = nil;
 {
     if (self = [super init]) {
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-        _storePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist", name]];
+        _storePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.litestore", name]];
         
         if ([[NSFileManager defaultManager] fileExistsAtPath:_storePath]) {
             _store = [NSMutableDictionary dictionaryWithContentsOfFile:_storePath];
@@ -40,6 +63,9 @@ static dispatch_queue_t _queue = nil;
         else {
             _store = [NSMutableDictionary new];
         }
+        
+        NSString *queueName = [NSString stringWithFormat:@"com.doubleencore.litestore.%@", name];
+        _queue = dispatch_queue_create([queueName UTF8String], NULL);
     }
     
     return self;
@@ -48,16 +74,17 @@ static dispatch_queue_t _queue = nil;
 
 - (NSDictionary *)dictionaryRepresentation
 {
-    return [_store copy];
+    __block NSDictionary *output = nil;
+    dispatch_sync(_queue, ^{
+        output = [_store copy];
+    });
+    
+    return output;
 }
 
 
 - (BOOL)synchronize
 {
-    if (!_queue) {
-        _queue = dispatch_queue_create("com.doubleencore.litestore", NULL);
-    }
-
     __block BOOL success;
     dispatch_sync(_queue, ^{
         success = [_store writeToFile:_storePath atomically:YES];
@@ -67,29 +94,44 @@ static dispatch_queue_t _queue = nil;
 }
 
 
+- (void)notify
+{
+    // NOTICE: Notification is posted on whichever thread the object is set from.
+    NSNotification *n = [NSNotification notificationWithName:DELiteStoreDidChangeNotification object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:n];
+}
+
+
 - (id)objectForKey:(NSString *)key
 {
-    return _store[key];
+    __block id object = nil;
+    dispatch_sync(_queue, ^{
+        object = _store[key];
+    });
+    
+    return object;
 }
 
 
 - (void)setObject:(id)value forKey:(NSString *)key
 {
-    _store[key] = value;
+    dispatch_sync(_queue, ^{
+        _store[key] = value;
+    });
     
     [self synchronize];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:DELiteStoreDidChangeNotification object:self];
+    [self notify];
 }
 
 
 - (void)removeObjectForKey:(NSString *)key
 {
-    _store[key] = nil;
+    dispatch_sync(_queue, ^{
+        _store[key] = nil;
+    });
     
     [self synchronize];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:DELiteStoreDidChangeNotification object:self];
+    [self notify];
 }
 
 
@@ -259,7 +301,6 @@ static dispatch_queue_t _queue = nil;
 {
     [self setObject:[url absoluteString] forKey:key];
 }
-
 
 
 @end

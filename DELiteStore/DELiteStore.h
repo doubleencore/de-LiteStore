@@ -14,7 +14,6 @@ extern NSString *const DELiteStoreDidChangeNotification;
 @interface DELiteStore : NSObject
 
 + (instancetype)storeWithName:(NSString *)name;
-- (instancetype)initWithName:(NSString *)name;
 
 - (id)objectForKey:(NSString *)key;
 - (void)setObject:(id)value forKey:(NSString *)key;
