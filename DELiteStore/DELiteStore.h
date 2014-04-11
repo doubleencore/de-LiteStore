@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString *const DELiteStoreDidChangeNotification;
+// NOTICE: Notification is posted on whichever thread the change occurs on.
+extern NSString *const DELiteStoreDidChangeNotification;
 
 @interface DELiteStore : NSObject
 

@@ -8,6 +8,8 @@
 
 #import "DELiteStore.h"
 
+NSString *const DELiteStoreDidChangeNotification = @"DELiteStoreDidChangeNotification";
+
 static dispatch_queue_t _queue = nil;
 
 @interface DELiteStore ()
