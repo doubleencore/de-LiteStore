@@ -12,11 +12,12 @@ NSString *const DELiteStoreDidChangeNotification = @"DELiteStoreDidChangeNotific
 
 static dispatch_queue_t _classQueue = nil;
 static NSMapTable *_liteStores = nil;
+static NSString *_storePath = nil;
 
-@interface DENLiteStore ()
+@interface DENLiteStore () {
+}
 
 @property (nonatomic, strong, readonly) NSString *name;
-@property (nonatomic, strong, readonly) NSString *storePath;
 @property (nonatomic, strong, readonly) NSMutableDictionary *store;
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
 
@@ -37,13 +38,19 @@ static NSMapTable *_liteStores = nil;
 
 + (instancetype)storeWithName:(NSString *)name
 {
+    return [self storeWithName:name path:nil];
+}
+
+
++ (instancetype)storeWithName:(NSString *)name path:(NSString *)path
+{
     __block id store = nil;
     
     dispatch_sync(_classQueue, ^{
         store = [_liteStores objectForKey:name];
         
         if (!store) {
-            store = [[self alloc] initWithName:name];
+            store = [[self alloc] initWithName:name path:path];
             [_liteStores setObject:store forKey:name];
         }
     });
@@ -54,11 +61,22 @@ static NSMapTable *_liteStores = nil;
 
 - (instancetype)initWithName:(NSString *)name
 {
+    return [self initWithName:name path:nil];
+}
+
+
+- (instancetype)initWithName:(NSString *)name path:(NSString *)path
+{
     if (self = [super init]) {
         _name = name;
         
-        NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-        _storePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.litestore", name]];
+        if (path.length > 0) {
+            _storePath = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.litestore", name]];
+        }
+        else {
+            NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+            _storePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.litestore", name]];
+        }
         
         if ([[NSFileManager defaultManager] fileExistsAtPath:_storePath]) {
             _store = [NSMutableDictionary dictionaryWithContentsOfFile:_storePath];
