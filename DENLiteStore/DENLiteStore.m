@@ -12,12 +12,12 @@ NSString *const DELiteStoreDidChangeNotification = @"DELiteStoreDidChangeNotific
 
 static dispatch_queue_t _classQueue = nil;
 static NSMapTable *_liteStores = nil;
-static NSString *_storePath = nil;
 
 @interface DENLiteStore () {
 }
 
 @property (nonatomic, strong, readonly) NSString *name;
+@property (nonatomic, strong, readonly) NSString *storePath;
 @property (nonatomic, strong, readonly) NSMutableDictionary *store;
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
 
