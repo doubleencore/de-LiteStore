@@ -14,6 +14,7 @@ extern NSString *const DELiteStoreDidChangeNotification;
 @interface DENLiteStore : NSObject
 
 + (instancetype)storeWithName:(NSString *)name;
++ (instancetype)storeWithName:(NSString *)name path:(NSString *)path;
 
 - (NSString *)name;
 
